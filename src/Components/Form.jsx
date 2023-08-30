@@ -69,13 +69,13 @@ const Form = ({patients, setPatients, patient, setPatient}) => {
   }
   return (
     <div>
-      <p className="text-lg my-5 text-center text-white font-bold uppercase"> Create new appointment</p>
+      <p className="text-lg my-5 text-center subTitle font-bold uppercase"> Create new appointment</p>
       <form onSubmit={handleSubmit} className="bg-white m-3 shadow-md rounded-lg">
         { error && (
             <Errors message='Please fill in all fields' />
         )}
         <div className="p-2">
-          <label htmlFor="petName" className="block text-sky-700 font-bold p-1">Pet Name</label>
+          <label htmlFor="petName" className="block normalText font-bold p-1">Pet Name</label>
           <input 
           id="petName" 
           type="text" 
@@ -87,7 +87,7 @@ const Form = ({patients, setPatients, patient, setPatient}) => {
         </div>
 
         <div className="p-2">
-          <label htmlFor="ownerName" className="block text-sky-700 font-bold p-1">Owner Name</label>
+          <label htmlFor="ownerName" className="block normalText font-bold p-1">Owner Name</label>
           <input 
           id="ownerName" 
           type="text" 
@@ -99,7 +99,7 @@ const Form = ({patients, setPatients, patient, setPatient}) => {
         </div>
 
         <div className="p-2">
-          <label htmlFor="email" className="block text-sky-700 font-bold p-1">Email</label>
+          <label htmlFor="email" className="block normalText font-bold p-1">Email</label>
           <input 
           id="email" 
           type="email" 
@@ -111,7 +111,7 @@ const Form = ({patients, setPatients, patient, setPatient}) => {
         </div>
 
         <div className="p-2">
-          <label htmlFor="appointmentDate" className="block text-sky-700 font-bold p-1">Appointment Date</label>
+          <label htmlFor="appointmentDate" className="block normalText font-bold p-1">Appointment Date</label>
           <input 
           id="appointmentDate" 
           type="date" 
@@ -122,7 +122,7 @@ const Form = ({patients, setPatients, patient, setPatient}) => {
         </div>
 
         <div className="p-2">
-          <label htmlFor="description" className="block text-sky-700 font-bold p-1">Description</label>
+          <label htmlFor="description" className="block normalText font-bold p-1">Description</label>
           <textarea 
           id="description" 
           className="border-2 w-full p-1 text-gray-500 rounded-md" 
@@ -133,7 +133,7 @@ const Form = ({patients, setPatients, patient, setPatient}) => {
 
         </div>
         <div className="p-2">
-          <input type="submit" className="bg-cyan-700 hover:bg-cyan-900 w-full p-1 rounded-lg text-white uppercase font-bold cursor-pointer transition-coolors" value={patient.id ? 'Edit Appointment' : 'Create Appointment'}/>       
+          <input type="submit" className="secondary w-full p-1 rounded-lg text-white uppercase font-bold cursor-pointer" value={patient.id ? 'Edit Appointment' : 'Create Appointment'}/>       
         </div>
       </form>
     </div>

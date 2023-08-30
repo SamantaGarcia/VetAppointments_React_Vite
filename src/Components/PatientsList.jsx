@@ -5,7 +5,7 @@ const PatientsList = ({patients, setPatient, deletePatient}) => {
     <div className="h-screen">
       {patients && patients.length ? (
         <>
-        <p className="text-lg text-center my-5 text-sky-700 font-bold uppercase"> List of Appointments</p>
+        <p className="text-lg text-center my-5 subTitle font-bold uppercase"> List of Appointments</p>
       <div className="overflow-y-scroll">
         { patients.map( (patient)=> (
             <Patient
@@ -18,7 +18,7 @@ const PatientsList = ({patients, setPatient, deletePatient}) => {
       </div>
         </>
       ): (
-        <p className="text-lg text-center my-5 text-sky-700 font-bold uppercase"> There are no Appointments</p>
+        <p className="text-lg text-center my-5 subTitle font-bold uppercase"> There are no Appointments</p>
         )}
       
     </div>

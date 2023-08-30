@@ -1,3 +1,35 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.primary{
+    color:#7d4f50;
+  }
+.secondary{
+    background-color:#cc8b86 ;
+  }
+.secondary:hover{
+    background-color: #a26465;
+}
+.subTitle{
+    color: #aa998f;
+}
+.normalText{
+    color: #cd9469;
+}
+
+.bgColor{
+    background-color: #f9eae1;
+}
+
+.warning{
+    background-color: rgb(244, 192, 49);
+}
+
+.delete{
+    background-color: #f34d36;
+}
+
+.icon{
+    display: inline;
+}

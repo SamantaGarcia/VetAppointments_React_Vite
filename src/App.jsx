@@ -19,15 +19,15 @@ function App() {
 
   return (    
     <div>
-       <div className="grid md:grid-cols-2">
-          <div className="bg-slate-200"><Header/></div>
+       <div className="grid md:grid-cols-3">
+          <div className="bgColor md:col-span-1"><Header/></div>
        </div>
 
-      <div className="grid md:grid-cols-2">
-          <div className="bg-slate-200">         
+      <div className="grid md:grid-cols-3">
+          <div className="bgColor">         
             <Form patients={patients} setPatients={setPatients} patient={patient} setPatient={setPatient}/>
           </div>
-          <div>
+          <div className="md:col-span-2">
             <PatientsList patients={patients} setPatient={setPatient} deletePatient={deletePatient} />
           </div>
       </div>          

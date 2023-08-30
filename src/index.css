@@ -3,23 +3,23 @@
 @tailwind utilities;
 
 .primary{
-    color:#7d4f50;
+    color:#006D77;
   }
 .secondary{
-    background-color:#cc8b86 ;
+    background-color:#71bcb5 ;
   }
 .secondary:hover{
-    background-color: #a26465;
+    background-color: #006D77;
 }
 .subTitle{
-    color: #aa998f;
+    color: #0b556a;
 }
 .normalText{
-    color: #cd9469;
+    color: #50676e;
 }
 
 .bgColor{
-    background-color: #f9eae1;
+    background-color: #EDF6F9;
 }
 
 .warning{

@@ -27,10 +27,11 @@ function App() {
           <div className="bgColor">         
             <Form patients={patients} setPatients={setPatients} patient={patient} setPatient={setPatient}/>
           </div>
-          <div className="md:col-span-2">
+          <div className="md:col-span-2 h-full">
             <PatientsList patients={patients} setPatient={setPatient} deletePatient={deletePatient} />
           </div>
-      </div>          
+      </div>   
+
     </div>
   )
 }

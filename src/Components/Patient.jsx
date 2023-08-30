@@ -8,7 +8,7 @@ const Patient = ({patient, setPatient, deletePatient}) => {
   }
   return (
     
-    <div className="mb-5 mx-5 p-3 shadow-md border-2 rounded-md grid grid-cols-2">   
+    <div className="mb-5 mx-5 p-3 shadow-md border-2 rounded-md">   
       <div>     
         <p className="font-bold mb-3 normalText">Pet Name: {''}
         <span className="font-normal normal-case text-gray-500">{petName}</span>
@@ -30,7 +30,7 @@ const Patient = ({patient, setPatient, deletePatient}) => {
         <span className="font-normal normal-case text-gray-500">{desc}</span>
         </p> 
       </div>  
-      <div>
+      <div className="flex flex-row-reverse">
           <button
             type="button"
             className="px-3 py-1 m-1 warning text-white font-bold rounded-md uppercase"          

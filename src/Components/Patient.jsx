@@ -1,5 +1,7 @@
+import {LuPencil, LuTrash2} from "react-icons/lu"
 const Patient = ({patient, setPatient, deletePatient}) => {
   const {petName, ownerName, ownerEmail, apptDate, desc, id } = patient
+
   const handleDelete = () =>{
     const response = confirm('Are you sure you want to delete this appointment?')
     if (response){
@@ -7,41 +9,22 @@ const Patient = ({patient, setPatient, deletePatient}) => {
     }
   }
   return (
-    
-    <div className="h-fit mb-5 mx-5 p-3 shadow-lg rounded-md bg-white">   
-      <div>     
-        <p className="font-bold mb-3 normalText">Pet Name: {''}
-        <span className="font-normal normal-case text-gray-500">{petName}</span>
-        </p>        
 
-        <p className="font-bold mb-3 normalText">Owner Name: {''}
-        <span className="font-normal normal-case text-gray-500">{ownerName}</span>
-        </p> 
+    <div className="h-fit mb-5 mx-5 shadow-lg rounded-md bg-white border">
+      <div className="p-3 grid-rows-4">
+        <div className="grid grid-cols-3">
+          <span className="normalText text-gray-700 font-semibold col-span-2 capitalize">{petName}</span>
+          <span className="rounded-md text-center border dateBg font-semibold">{apptDate}</span>
+        </div>
+        <div className="font-normal normalText capitalize">{ownerName}</div>
+        <div className="font-normal text-gray-400">{ownerEmail}</div>
+        <div className="pt-2 font-normal text-gray-500">{desc}</div>
+      </div>
 
-        <p className="font-bold mb-3 normalText">Email: {''}
-        <span className="font-normal normal-case text-gray-500">{ownerEmail}</span>
-        </p> 
-
-        <p className="font-bold mb-3 normalText">Appointment Date: {''}
-        <span className="font-normal normal-case text-gray-500">{apptDate}</span>
-        </p> 
-
-        <p className="font-bold mb-3 normalText">Description: {''}
-        <span className="font-normal normal-case text-gray-500">{desc}</span>
-        </p> 
-      </div>  
-      <div className="flex flex-row-reverse">
-          <button
-            type="button"
-            className="px-3 py-1 m-1 warning text-white font-bold rounded-md uppercase"          
-            onClick={()=> setPatient(patient)}
-          >Edit</button>
-          <button
-            type="button"
-            className="px-3 py-1 m-1 delete text-white font-bold rounded-md uppercase" 
-            onClick={handleDelete}         
-          >Delete</button>
-      </div> 
+      <div className="grid grid-cols-2">
+        <div className="border-t-2 border-r-2 px-3 py-2 font-semibold text-center cursor-pointer" type="button" onClick={()=> setPatient(patient)}><LuPencil className="icon mr-1" />Edit</div>
+        <div className="border-t-2 px-3 py-2 font-semibold text-center cursor-pointer"type="button" onClick={handleDelete} ><LuTrash2 className="icon mr-1" />Delete</div>
+      </div>
     </div>
   )
 }

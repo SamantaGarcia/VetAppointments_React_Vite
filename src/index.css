@@ -22,12 +22,10 @@
     background-color: #8ecae6;
 }
 
-.warning{
-    background-color: #ffb703;
-}
-
-.delete{
-    background-color: #fb5800;
+.dateBg{
+    color: #3e3f3f;
+    background-color: #F1F5F9;
+    border-color: #3e3f3f;
 }
 
 .icon{

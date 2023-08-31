@@ -8,7 +8,7 @@ const Patient = ({patient, setPatient, deletePatient}) => {
   }
   return (
     
-    <div className="mb-5 mx-5 p-3 shadow-md border-2 rounded-md">   
+    <div className="h-fit mb-5 mx-5 p-3 shadow-lg rounded-md bg-white">   
       <div>     
         <p className="font-bold mb-3 normalText">Pet Name: {''}
         <span className="font-normal normal-case text-gray-500">{petName}</span>

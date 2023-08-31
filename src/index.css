@@ -3,33 +3,39 @@
 @tailwind utilities;
 
 .primary{
-    color:#006D77;
+    color:#023047;
   }
 .secondary{
-    background-color:#71bcb5 ;
+    background-color:#219ebc ;
   }
 .secondary:hover{
     background-color: #006D77;
 }
 .subTitle{
-    color: #0b556a;
+    color: #023047;
 }
 .normalText{
-    color: #50676e;
+    color: #0b556a;
 }
 
 .bgColor{
-    background-color: #EDF6F9;
+    background-color: #8ecae6;
 }
 
 .warning{
-    background-color: rgb(244, 192, 49);
+    background-color: #ffb703;
 }
 
 .delete{
-    background-color: #f34d36;
+    background-color: #fb5800;
 }
 
 .icon{
     display: inline;
+}
+
+.DivWithScroll{
+    height:550px;
+    overflow:scroll;
+    overflow-x:hidden;
 }

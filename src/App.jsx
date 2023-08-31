@@ -21,13 +21,14 @@ function App() {
     <div>
        <div className="grid md:grid-cols-3">
           <div className="bgColor md:col-span-1"><Header/></div>
+          <div className="bg-slate-50 md:col-span-2"></div>
        </div>
 
       <div className="grid md:grid-cols-3">
-          <div className="bgColor">         
+          <div className="bgColor h-screen">         
             <Form patients={patients} setPatients={setPatients} patient={patient} setPatient={setPatient}/>
           </div>
-          <div className="md:col-span-2 h-full">
+          <div className="md:col-span-2 bg-slate-50">
             <PatientsList patients={patients} setPatient={setPatient} deletePatient={deletePatient} />
           </div>
       </div>   

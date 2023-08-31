@@ -6,8 +6,8 @@ const PatientsList = ({patients, setPatient, deletePatient}) => {
       {patients && patients.length ? (
         <>
         <p className="text-lg text-center my-5 subTitle font-bold uppercase"> List of Appointments</p>
-          <div className="grid lg:grid-cols-3 gap-2 place-items-stretch">
-            { patients.map( (patient)=> (
+          <div className="DivWithScroll grid md:grid-cols-2 xl:grid-cols-3 gap-2">
+            { patients.slice(0).reverse().map( (patient)=> (
                 <Patient
                 key={patient.id}
                 patient={patient}

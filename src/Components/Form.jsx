@@ -69,7 +69,7 @@ const Form = ({patients, setPatients, patient, setPatient}) => {
   }
   return (
     <div>
-      <p className="text-lg my-5 text-center subTitle font-bold uppercase"> Create new appointment</p>
+      <p className="text-lg my-5 text-center text-white font-bold uppercase"> Create new appointment</p>
       <form onSubmit={handleSubmit} className="bg-white m-3 shadow-md rounded-lg">
         { error && (
             <Errors message='Please fill in all fields' />
